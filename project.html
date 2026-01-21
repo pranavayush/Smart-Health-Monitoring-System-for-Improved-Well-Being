@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Healthcare System | Govt Hospital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🏥 Smart Healthcare</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#departments">Departments</a>
+      <a href="#booking">Book Appointment</a>
+      <a href="#login">Login</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Government Hospital Smart Healthcare System</h1>
+      <p>Online OPD Appointment Booking | Easy Registration | Faster Treatment</p>
+      <a href="#booking" class="btn">Book Appointment</a>
+      <a href="#departments" class="btn btn2">View Departments</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>📝 Online Booking</h3>
+        <p>Book OPD appointments online without standing in long queues.</p>
+      </div>
+      <div class="card">
+        <h3>👨‍⚕️ Doctor Schedule</h3>
+        <p>Check doctor availability and timings quickly.</p>
+      </div>
+      <div class="card">
+        <h3>📄 E-Token</h3>
+        <p>Get appointment token number instantly after booking.</p>
+      </div>
+      <div class="card">
+        <h3>🧾 Patient Records</h3>
+        <p>Store patient details safely and access easily.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Departments -->
+  <section id="departments" class="departments">
+    <h2>Departments & Doctors</h2>
+    <div class="grid">
+      <div class="dept">
+        <h3>General Medicine</h3>
+        <p>Dr. A. Sharma (10 AM - 2 PM)</p>
+      </div>
+      <div class="dept">
+        <h3>Orthopedics</h3>
+        <p>Dr. R. Verma (11 AM - 3 PM)</p>
+      </div>
+      <div class="dept">
+        <h3>ENT</h3>
+        <p>Dr. P. Singh (9 AM - 1 PM)</p>
+      </div>
+      <div class="dept">
+        <h3>Gynecology</h3>
+        <p>Dr. N. Gupta (12 PM - 4 PM)</p>
+      </div>
+      <div class="dept">
+        <h3>Pediatrics</h3>
+        <p>Dr. S. Khan (10 AM - 1 PM)</p>
+      </div>
+      <div class="dept">
+        <h3>Dermatology</h3>
+        <p>Dr. M. Yadav (2 PM - 5 PM)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Booking -->
+  <section id="booking" class="booking">
+    <h2>Book OPD Appointment</h2>
+
+    <form id="appointmentForm" class="form">
+      <div class="row">
+        <div class="input-box">
+          <label>Patient Name</label>
+          <input type="text" id="pname" placeholder="Enter full name" required />
+        </div>
+
+        <div class="input-box">
+          <label>Mobile Number</label>
+          <input type="tel" id="mobile" placeholder="Enter mobile number" required />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-box">
+          <label>Age</label>
+          <input type="number" id="age" placeholder="Enter age" required />
+        </div>
+
+        <div class="input-box">
+          <label>Gender</label>
+          <select id="gender" required>
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-box">
+          <label>Department</label>
+          <select id="department" required>
+            <option value="">Select Department</option>
+            <option>General Medicine</option>
+            <option>Orthopedics</option>
+            <option>ENT</option>
+            <option>Gynecology</option>
+            <option>Pediatrics</option>
+            <option>Dermatology</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <label>Appointment Date</label>
+          <input type="date" id="date" required />
+        </div>
+      </div>
+
+      <div class="input-box">
+        <label>Problem / Symptoms</label>
+        <textarea id="problem" rows="4" placeholder="Write symptoms..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn full">Confirm Appointment</button>
+
+      <p id="successMsg"></p>
+    </form>
+  </section>
+
+  <!-- Login/Register Section -->
+  <section id="login" class="login">
+    <h2>Patient Login</h2>
+
+    <div class="login-box">
+      <div class="mini-form">
+        <h3>Login</h3>
+        <input type="text" placeholder="Mobile Number" />
+        <input type="password" placeholder="Password" />
+        <button class="btn full">Login</button>
+      </div>
+
+      <div class="mini-form">
+        <h3>Register</h3>
+        <input type="text" placeholder="Full Name" />
+        <input type="tel" placeholder="Mobile Number" />
+        <input type="password" placeholder="Create Password" />
+        <button class="btn full">Register</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact" class="footer">
+    <h2>Contact Government Hospital</h2>
+    <p>📍 Address: District Government Hospital, India</p>
+    <p>📞 Helpline: 1800-123-456</p>
+    <p>✉️ Email: govt.hospital@health.in</p>
+    <p class="copy">© 2026 Smart Healthcare System | Government Hospital</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
