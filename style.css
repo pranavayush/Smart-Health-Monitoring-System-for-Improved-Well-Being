@@ -16,7 +16,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background: #0b5ed7;
+  background: green;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
