@@ -2,76 +2,220 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif; /* body default */
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Headings */
-h1, h2, h3 {
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 0.3px;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Logo */
+body {
+  background: #f6f9fc; /* very light hospital white-blue */
+  color: #1f2933;
+}
+
+/* Navbar */
+.navbar {
+  background: #0f4c75; /* deep govt blue */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .logo {
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
+  color: #ffffff;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
-/* Navbar links */
 .navbar nav a {
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
+  color: #eaf6ff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 600;
 }
 
-/* Hero Text */
+.navbar nav a:hover {
+  color: #a8dadc;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: linear-gradient(to right, #0f4c75, #3282b8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-content {
+  text-align: center;
+  color: #ffffff;
+  max-width: 800px;
+}
+
 .hero-content h1 {
-  font-size: 44px;
-  font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 15px;
 }
 
 .hero-content p {
   font-size: 18px;
-  font-weight: 400;
+  margin-bottom: 25px;
+  opacity: 0.95;
 }
 
-/* Section Titles */
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #ffffff;
+  color: #0f4c75;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 6px;
+  transition: 0.3s ease;
+}
+
+.btn2 {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn:hover {
+  background: #e3f2fd;
+}
+
+/* Sections */
+section {
+  padding: 60px 30px;
+}
+
 h2 {
-  font-size: 32px;
-  font-weight: 600;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #0f4c75;
 }
 
-/* Cards */
-.card, .dept {
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-/* Form Labels */
+.card,
+.dept {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #7ec8e3; /* hospital accent */
+}
+
+/* Booking Form */
+.booking {
+  background: #e8f4fd;
+}
+
+.form {
+  max-width: 850px;
+  margin: auto;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.input-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
 .input-box label {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
   font-weight: 600;
+  margin-bottom: 6px;
+  color: #0f4c75;
 }
 
-/* Inputs */
 .input-box input,
 .input-box select,
 .input-box textarea {
-  font-family: "Inter", sans-serif;
+  padding: 10px;
+  border: 1px solid #b6d4ea;
+  border-radius: 8px;
   font-size: 15px;
 }
 
-/* Buttons */
-.btn {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.5px;
+.input-box input:focus,
+.input-box select:focus,
+.input-box textarea:focus {
+  outline: none;
+  border-color: #3282b8;
+}
+
+/* Login */
+.login-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.mini-form {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.mini-form h3 {
+  margin-bottom: 15px;
+  color: #0f4c75;
+}
+
+.mini-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #b6d4ea;
 }
 
 /* Footer */
 .footer {
-  font-family: "Inter", sans-serif;
+  background: #0f4c75;
+  color: #eaf6ff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.copy {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* Success Msg */
+#successMsg {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #2e7d32; /* medical green */
 }
