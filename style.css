@@ -16,7 +16,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background: green;
+  background: rgb(29, 46, 69);
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -210,3 +210,4 @@ h2 {
   text-align: center;
   color: green;
 }
+
